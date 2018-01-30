@@ -25,23 +25,23 @@ def handle_calculate_IK(req):
         print "No valid poses received"
         return -1
     else:
-		
+
         ### Your FK code here
         # Create symbols
-	#
-	#   
-	# Create Modified DH parameters
-	#
-	#            
-	# Define Modified DH Transformation matrix
-	#
-	#
-	# Create individual transformation matrices
-	#
-	#
-	# Extract rotation matrices from the transformation matrices
-	#
-	#
+    	#
+    	#
+    	# Create Modified DH parameters
+    	#
+    	#
+    	# Define Modified DH Transformation matrix
+    	#
+    	#
+    	# Create individual transformation matrices
+    	#
+    	#
+    	# Extract rotation matrices from the transformation matrices
+    	#
+    	#
         ###
 
         # Initialize service response
@@ -60,8 +60,8 @@ def handle_calculate_IK(req):
             (roll, pitch, yaw) = tf.transformations.euler_from_quaternion(
                 [req.poses[x].orientation.x, req.poses[x].orientation.y,
                     req.poses[x].orientation.z, req.poses[x].orientation.w])
-     
-            ### Your IK code here 
+
+            ### Your IK code here
 	    # Compensate for rotation discrepancy between DH parameters and Gazebo
 	    #
 	    #
@@ -69,7 +69,7 @@ def handle_calculate_IK(req):
 	    #
 	    #
             ###
-		
+
             # Populate response for the IK request
             # In the next line replace theta1,theta2...,theta6 by your joint angle variables
 	    joint_trajectory_point.positions = [theta1, theta2, theta3, theta4, theta5, theta6]
