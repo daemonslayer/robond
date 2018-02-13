@@ -49,13 +49,13 @@ You're reading it!
 
 Links | alpha(i-1) | a(i-1) | d(i-1) | theta(i)
 --- | --- | --- | --- | ---
-0->1 | 0 | 0 | - | -
-1->2 | - pi/2 | 0.35 | 0.75 | theta1
-2->3 | 0 | 1.25 | 0 | theta2
-3->4 |  -pi/2 | -0.054 | 0 | theta3
-4->5 | pi/2 | 0 | 1.5 | theta4
-5->6 | -pi/2 | 0 | 0 | theta5
-6->EE | 0 | 0 | 0.303 | theta6
+0->1 | 0 | 0 | 0.75 | theta1
+1->2 | - pi/2 | 0.35 | 0 | theta2 - pi/2
+2->3 | 0 | 1.25 | 0 | theta3
+3->4 |  -pi/2 | -0.054 | 1.5 | theta4
+4->5 | pi/2 | 0 | 0 | theta5
+5->6 | -pi/2 | 0 | 0 | theta6
+6->EE | 0 | 0 | 0.303 | 0
 
 
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
